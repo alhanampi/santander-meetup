@@ -1,0 +1,60 @@
+/* fonts, resets */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.appWrapper {
+  min-height: calc(100vh - 120px);
+}
+
+
+
+//colors
+$red: #ec0000;
+$dark-grey: #333333;
+$medium-grey: #6d6d6d;
+$light-grey: #c2c2c2;
+$white: #f0f0f0;
+
+:root {
+  --red: #{$red};
+  --dark-grey: #{$dark-grey};
+  --medium-grey: #{$medium-grey};
+  --light-grey: #{$light-grey};
+  --white: #{$white};
+}
+
+body a {
+  text-decoration: none;
+  color: inherit;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+
+  &:hover {
+    color: inherit;
+  }
+}
+
+//mixins
+
+//buttons basic style
+@mixin buttonBase {
+  display: block;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 40px;
+  position: relative;
+  border-radius: 40px;
+  margin-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+}
+

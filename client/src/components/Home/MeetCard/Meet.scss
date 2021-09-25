@@ -1,0 +1,10 @@
+@import "../../../styles/main";
+
+.meetCard {
+    min-height: 300px;
+
+    .cardHeader {
+        background-color: $medium-grey;
+        color: $white;
+    }
+}

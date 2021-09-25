@@ -1,0 +1,27 @@
+@import "../../styles/main";
+
+button.newRegister {
+  @include buttonBase;
+  color: $white;
+  border: 2px solid $red;
+  background-color: $red;
+
+  &:hover {
+    border: 2px solid $red;
+    color: $red;
+    background-color: $white;
+  }
+}
+
+.loginImg {
+  max-width: 600px;
+}
+
+.loginBox {
+  display: flex;
+  align-items: center;
+}
+
+.link:hover {
+    color: $red;
+}

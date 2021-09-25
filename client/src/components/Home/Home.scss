@@ -1,0 +1,65 @@
+@import "../../styles/main";
+
+.home{
+  .homeRow {
+    .col {
+      text-align: left;
+
+    }
+  }
+}
+
+button.newMeet, button.login {
+    @include buttonBase;
+    color: $white;
+    border: 2px solid $red;
+    background-color: $red;
+
+    &:hover {
+        border: 2px solid $red;
+        color: $red;
+        background-color: $white;
+    }
+  }
+
+  button.register {
+    @include buttonBase;
+    color: $white;
+    border: 2px solid $dark-grey;
+    background-color: $dark-grey;
+
+  
+    &:hover {
+      border: 2px solid $red;
+      color: $red;
+      background-color: $white;
+    }
+  }
+
+  .nav-tabs .nav-link {
+    color: $red;
+
+    &:hover {
+        background-color: $red;
+        color: $white;
+    }
+  }
+
+  .displayNone {
+    display: none;
+  }
+  
+  @media (max-width: 1280px) {
+    .home{
+      .homeRow {
+        .col {
+          text-align: center;
+          button {
+            margin: auto;
+            margin-bottom: 2%;
+          }
+        }
+      }
+    }
+  }
+  
